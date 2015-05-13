@@ -36,7 +36,7 @@ def sanitize_data():
     db.entries.update({ "title": "The Glow Worm" }, { "$set": { "title": "Glow Worm" }})
     db.entries.update({ "artist": "The Mills Brothers" }, { "$set": { "artist": "The Mills Brothers" }})
     db.entries.update({ "artist": "Beatles" }, { "$set": { "artist": "The Beatles" }})
-    db.entries.update({ "title": "Come On A My House" }, { "$set": { "title": "Come On-A My House" }})
+    db.entries.update({ "title": "Come On  A My House" }, { "$set": { "title": "Come On-A My House" }})
     db.entries.update({ "artist": "Four Aces" }, { "$set": { "artist": "The Four Aces" }})
     db.entries.update({ "title": "Walkin' My Baby Back Home" }, { "$set": { "title": "Walking My Baby Back Home" }})
     db.entries.update({ "title": "Pittsburgh, Pennsylvania" }, { "$set": { "title": "Pittsburgh Pennsylvania" }})
@@ -48,6 +48,11 @@ def sanitize_data():
     db.entries.update({ "artist": "Perry Como And Betty Hutton" }, { "$set": { "artist": "Perry Como" }})
     db.entries.update({ "artist": "Gary Crosby And His Friend (Bing Crosby)" }, { "$set": { "artist": "Bing Crosby" }})
     db.entries.update({ "title": "Hoop Dee Doo" }, { "$set": { "title": "Hoop-Dee-Doo" }})
-
+    db.entries.update({ "title": "Sin" }, { "$set": { "title": "(It's No) Sin" }})
+    db.entries.update({ "title": "My Truly, Truly Fair" }, { "$set": { "title": "My Truly Truly Fair" }})
+    db.entries.update({ "title": "Rudolph, The RedNosed Reindeer" }, { "$set": { "title": "Rudolph The Red-Nosed Reindeer" }})
+    db.entries.update({ "title": "I Said My Pajamas" }, { "$set": { "title": "I Said My Pajamas (And Put On My Pray'rs)", "artist": "Tony Martin" }})
+    db.entries.update({ "artist": "Weavers" }, { "$set": { "artist": "The Weavers" }})
+    db.entries.update({ "title": "On Top Of Old Smoky" }, { "$set": { "title": "On Top Of Old Smokey" }})
 
 sanitize_data()

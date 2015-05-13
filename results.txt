@@ -1,7 +1,6 @@
 404 error getting lyrics for Goodnight by Weavers (Gordon Jenkins And His Orchestra), 1950
 404 error getting lyrics for Les Baxter And His Orchestra by Nat ''king'' Cole, 1950
 404 error getting lyrics for Chattanoogie Shoe Shine Boy by Red Foley, 1950
-Successfully extracted lyrics for Hoop-Dee-Doo by Perry Como
 Parsing error getting lyrics for (Vocal Don Cornell) by Sammy Kaye, 1950
 404 error getting lyrics for Play A Simple by Gary Crosby And Friend (Bing Crosby), 1950
 404 error getting lyrics for Tzena by Weavers (Gordon Jenkins And His Orchestra), 1950
@@ -9,29 +8,27 @@ Parsing error getting lyrics for (Vocal Don Cornell) by Sammy Kaye, 1950
 404 error getting lyrics for Hoop-Dee-Doo by Kay Starr, 1950
 404 error getting lyrics for Harbor Lights by Guy Lombardo And His Royal Canadians, 1950
 404 error getting lyrics for Sam's Song by Gary Crosby And Friend (Bing Crosby), 1950
-Successfully extracted lyrics for A Bushel And A Peck by Perry Como
 404 error getting lyrics for Bewitched by Bill Snyder Orchestra, 1950
 404 error getting lyrics for I'll Never Be by Kay Starr And Tennessee Ernie Ford, 1950
-Successfully extracted lyrics for A Dreamer's Holiday by Perry Como
 404 error getting lyrics for Tzena, Tzena, Tzen by Mitch Miller And His Orchestra, 1950
-404 error getting lyrics for Rudolph, The RedNosed Reindeer by Gene Autry, 1950
+Successfully extracted lyrics for Rudolph The Red-Nosed Reindeer by Gene Autry
 404 error getting lyrics for My Foolish Heart by Gordon Jenkins And His Orchestra, 1950
-404 error getting lyrics for I Said My Pajamas by Tony Martin And Fran Warren, 1950
+Successfully extracted lyrics for I Said My Pajamas (And Put On My Pray'rs) by Tony Martin
 404 error getting lyrics for Rag Mop by Ralph Flanagan And His Orchestra, 1950
 404 error getting lyrics for Bewitched by Gordon Jenkins And His Orchestra, 1950
 404 error getting lyrics for Come On  A My House by Rosemary Clooney, 1951
 404 error getting lyrics for (Les Baxter & His Orchestra) by Nat ''king'' Cole, 1951
-404 error getting lyrics for On Top Of Old Smoky by Weavers, 1951
+Successfully extracted lyrics for On Top Of Old Smokey by The Weavers
 404 error getting lyrics for The World Is Waiting by Les Paul & Mary Ford, 1951
 404 error getting lyrics for Undecided by The Ames Brothers, 1951
-404 error getting lyrics for My Truly, Truly Fair by Guy Mitchell, 1951
+Successfully extracted lyrics for My Truly Truly Fair by Guy Mitchell
 404 error getting lyrics for Sweet Violets by Dinah Shore, 1951
 404 error getting lyrics for Sound Off by Vaughn Monroe & His Orchestra, 1951
 404 error getting lyrics for Aba Daba Ho by Debbie Reynolds & Carlton Carpenter, 1951
 404 error getting lyrics for Rose, Rose, I Love You by Frankie Laine, 1951
 404 error getting lyrics for The Roving Kind by Guy Mitchell, 1951
 404 error getting lyrics for My Heart Cries For You by Vic Damone, 1951
-404 error getting lyrics for Sin by The Four Aces, 1951
+Successfully extracted lyrics for (It's No) Sin by The Four Aces
 404 error getting lyrics for Down Yonder by Del Wood, 1951
 404 error getting lyrics for So Lonley by Weavers (Gordon Jenkins & His Orchestra), 1951
 Parsing error getting lyrics for (It's No) Sin by Savannah Churchill, 1951
@@ -503,4 +500,4 @@ Parsing error getting lyrics for Sugar by Maroon 5, 2015
 404 error getting lyrics for G.D.F.R. by Flo Rida, 2015
 404 error getting lyrics for Throw Sun Mo by Rae Sremmurd, 2015
 404 error getting lyrics for Honey, I'm Good by Andy Grammer, 2015
-Finished with 3 successes and 502 errors
+Finished with 5 successes and 497 errors
