@@ -65,19 +65,20 @@ def get_lyrics(entry, db):
 
     title = entry['title'].encode('utf-8')
     artist = entry['artist'].encode('utf-8')
+    year = entry['year']
 
     artist_clean = urllib2.quote(sanitize_artist(artist).replace(" ", "_"))
     title_clean = urllib2.quote(sanitize_title(title).replace(" ", "_"))
     url = 'http://lyrics.wikia.com/' + artist_clean + ':' + title_clean
     page = requests.get(url)
     if page.status_code != 200:
-        print "Error getting lyrics for " + title + " by " + artist
+        print "404 error getting lyrics for " + title + " by " + artist + ", " + str(year)
         errors += 1
     else:
         page_soup = BeautifulSoup(page.text)
         lyrics = page_soup.select(".lyricbox")
         if len(lyrics) == 0:
-            print "Error getting lyrics for " + title + " by " + artist
+            print "Parsing error getting lyrics for " + title + " by " + artist + ", " + str(year)
             errors += 1
             return
 

@@ -36,7 +36,18 @@ def sanitize_data():
     db.entries.update({ "title": "The Glow Worm" }, { "$set": { "title": "Glow Worm" }})
     db.entries.update({ "artist": "The Mills Brothers" }, { "$set": { "artist": "The Mills Brothers" }})
     db.entries.update({ "artist": "Beatles" }, { "$set": { "artist": "The Beatles" }})
-
+    db.entries.update({ "title": "Come On A My House" }, { "$set": { "title": "Come On-A My House" }})
+    db.entries.update({ "artist": "Four Aces" }, { "$set": { "artist": "The Four Aces" }})
+    db.entries.update({ "title": "Walkin' My Baby Back Home" }, { "$set": { "title": "Walking My Baby Back Home" }})
+    db.entries.update({ "title": "Pittsburgh, Pennsylvania" }, { "$set": { "title": "Pittsburgh Pennsylvania" }})
+    db.entries.update({ "artist": "Everly Brothers" }, { "$set": { "artist": "The Everly Brothers" }})
+    db.entries.update({ "artist": "Anton Karas" }, { "$set": { "artist": "Guy Lombardo" }})
+    db.entries.update({ "title": "The Third" }, { "$set": { "title": "The Third Man Theme" }})
+    db.entries.update({ "title": "If I Knew You Were Comin'" }, { "$set": { "title": "If I Knew You Were Comin' I'd've Baked A Cake", "artist": "Fred Penner" }})
+    db.entries.update({ "artist": "Perry Como And Fontane Sisters" }, { "$set": { "artist": "Perry Como" }})
+    db.entries.update({ "artist": "Perry Como And Betty Hutton" }, { "$set": { "artist": "Perry Como" }})
+    db.entries.update({ "artist": "Gary Crosby And His Friend (Bing Crosby)" }, { "$set": { "artist": "Bing Crosby" }})
+    db.entries.update({ "title": "Hoop Dee Doo" }, { "$set": { "title": "Hoop-Dee-Doo" }})
 
 
 sanitize_data()
