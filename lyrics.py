@@ -15,11 +15,36 @@ def santize(lyrics):
         lyrics = lyrics.replace(w, '')
     return lyrics
 
+def sanitize_title(title):
+
+    # Remove featuring from title
+    title = re.sub(' ft.*', '', title, flags=re.I)
+    title = re.sub(' feat.*', '', title, flags=re.I)
+    title = re.sub(' \(feat.*', '', title, flags=re.I)
+    title = re.sub(' \(ft.*', '', title, flags=re.I)
+
+    # Replace common spelling mistakes
+    title = re.sub('Im', 'I\'m', title)
+    title = re.sub('Ive', 'I\'ve', title)
+    title = re.sub('Youre', 'You\'re', title)
+    title = re.sub('Its ', 'It\'s ', title)
+    title = re.sub('Doesnt', 'Doesn\'t ', title)
+    return title
+
 def sanitize_artist(artist):
+
+    # Remove featuring from artist titles
     artist = re.sub(' ft.*', '', artist, flags=re.I)
     artist = re.sub(' feat.*', '', artist, flags=re.I)
     artist = re.sub(' \(feat.*', '', artist, flags=re.I)
     artist = re.sub(' \(ft.*', '', artist, flags=re.I)
+
+    # Replace 'And His'
+    artist = re.sub(' And His.*', '', artist, flags=re.I)
+
+    # Try Replacing &
+    artist = re.sub(' \&.*', '', artist)
+
     return artist
 
 def get_top_40_lyrics():
@@ -41,8 +66,8 @@ def get_lyrics(entry, db):
     title = entry['title'].encode('utf-8')
     artist = entry['artist'].encode('utf-8')
 
-    title_clean = urllib2.quote(title.replace(" ", "_"))
     artist_clean = urllib2.quote(sanitize_artist(artist).replace(" ", "_"))
+    title_clean = urllib2.quote(sanitize_title(title).replace(" ", "_"))
     url = 'http://lyrics.wikia.com/' + artist_clean + ':' + title_clean
     page = requests.get(url)
     if page.status_code != 200:
